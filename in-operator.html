@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // belajar operator in
+
+        // const person = {
+        //     "firstName" : "Robi Nurhidayat",
+        //     "age" : 21
+        // }
+
+        // if("firstName" in person){
+        //     alert(`Hallo ${firstName}`);
+        // }else{
+        //     alert("hello aja");
+        // }
+
+        // const angka = [1,2,3];
+        // const result = 0 in angka;
+
+        // document.writeln(result);
+
+        const bio = {
+            name : "Robi Nurhidayat",
+            age : 21
+        }
+
+        if("name" in bio){
+            alert(`Hallo ${bio.name}`)
+        }else {
+            document.writeln("tidak ada");
+        }
+
+        const adi = {
+            name : "Adi Saputra",
+            data : undefined
+        }
+
+        if("data" in adi){
+            alert("ada tapi undifined");
+        }else{
+            alert("Tidak ada undifined");
+        }
+
+        const angka = [1,2,3,null];
+        const hasil = 3 in angka;
+        document.writeln(hasil);
+    </script>
+</body>
+</html>
